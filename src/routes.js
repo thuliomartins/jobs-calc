@@ -70,7 +70,7 @@ const Job = {
         },
 
         save(req, res) {
-            const jobId = Job.data[Job.data.length -1]?.id || 1;
+            const jobId = Job.data[Job.data.length -1]?.id || 0;
         
             Job.data.push({
                 id: jobId + 1,
